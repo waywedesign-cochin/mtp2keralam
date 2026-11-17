@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyTrip 2 Keralam – Hotels, Tour Packages &amp; Cabs in Kerala</title>
+  <meta name="description" content="Book Kerala hotels, resorts, holiday packages and cabs with MyTrip 2 Keralam. Local experts for Munnar, Alleppey, Wayanad, Thekkady, Kochi and Varkala.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="MyTrip 2 Keralam home">
+        <span class="brand-mark" aria-hidden="true">M2K</span>
+        <span class="brand-text">MyTrip <em>2</em> Keralam</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#hotels">Hotels &amp; Resorts</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#cabs">Cabs</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="tel:+910000000000" class="nav-phone">+91 00000 00000</a>
+          <a href="#" class="btn btn-ghost btn-sm">Login / Sign Up</a>
+          <a href="#plan" class="btn btn-accent btn-sm">Enquire Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <img class="hero-bg" src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=2000&q=75" alt="Traditional Kerala houseboat cruising the Alleppey backwaters">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow eyebrow-light">God's Own Country</span>
+        <h1>Discover the Beauty of Kerala</h1>
+        <p>Explore breathtaking destinations, discover beautiful stays, and create unforgettable journeys across God's Own Country.</p>
+        <div class="hero-ctas">
+          <a href="#destinations" class="btn btn-accent btn-lg">Explore Kerala</a>
+          <a href="#plan" class="btn btn-outline-light btn-lg">Plan Your Trip</a>
+        </div>
+        <ul class="hero-stats" aria-label="Highlights">
+          <li><strong>120+</strong><span>Curated stays</span></li>
+          <li><strong>40+</strong><span>Holiday packages</span></li>
+          <li><strong>24/7</strong><span>Local support</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SEARCH WIDGET (CSS-only tabs) ============ -->
+    <section class="search-wrap" aria-label="Search">
+      <div class="container">
+        <div class="search-card">
+          <input type="radio" name="search-tab" id="tab-hotels" checked>
+          <input type="radio" name="search-tab" id="tab-packages">
+          <input type="radio" name="search-tab" id="tab-cabs">
+
+          <div class="tab-list" role="tablist">
+            <label for="tab-hotels" class="tab"><span class="tab-ico" aria-hidden="true">&#9962;</span> Hotels</label>
+            <label for="tab-packages" class="tab"><span class="tab-ico" aria-hidden="true">&#9992;</span> Holiday Packages</label>
+            <label for="tab-cabs" class="tab"><span class="tab-ico" aria-hidden="true">&#9951;</span> Cabs</label>
+          </div>
+
+          <!-- Hotels -->
+          <div class="tab-panel panel-hotels">
+            <div class="field field-wide">
+              <label for="h-dest">Destination</label>
+              <input id="h-dest" type="text" placeholder="Munnar, Alleppey, Kochi…">
+            </div>
+            <div class="field">
+              <label for="h-in">Check-in</label>
+              <input id="h-in" type="date">
+            </div>
+            <div class="field">
+              <label for="h-out">Check-out</label>
+              <input id="h-out" type="date">
+            </div>
+            <div class="field">
+              <label for="h-rooms">Rooms</label>
+              <select id="h-rooms"><option>1 Room</option><option>2 Rooms</option><option>3 Rooms</option><option>4+ Rooms</option></select>
+            </div>
+            <div class="field">
+              <label for="h-guests">Guests</label>
+              <select id="h-guests"><option>2 Adults</option><option>1 Adult</option><option>2 Adults, 1 Child</option><option>Family (4+)</option></select>
+            </div>
+            <button type="button" class="btn btn-accent search-btn">Search Hotels</button>
+          </div>
+
+          <!-- Packages -->
+          <div class="tab-panel panel-packages">
+            <div class="field field-wide">
+              <label for="p-dest">Destination</label>
+              <input id="p-dest" type="text" placeholder="Where in Kerala?">
+            </div>
+            <div class="field">
+              <label for="p-date">Departure Date</label>
+              <input id="p-date" type="date">
+            </div>
+            <div class="field">
+              <label for="p-trav">Travellers</label>
+              <select id="p-trav"><option>2 Travellers</option><option>1 Traveller</option><option>3–5 Travellers</option><option>6+ Travellers</option></select>
+            </div>
+            <div class="field">
+              <label for="p-dur">Duration</label>
+              <select id="p-dur"><option>4–6 Days</option><option>2–3 Days</option><option>7–9 Days</option><option>10+ Days</option></select>
+            </div>
+            <button type="button" class="btn btn-accent search-btn">Explore Packages</button>
+          </div>
+
+          <!-- Cabs -->
+          <div class="tab-panel panel-cabs">
+            <div class="field field-wide">
+              <label for="c-pick">Pickup Location</label>
+              <input id="c-pick" type="text" placeholder="Cochin Airport (COK)">
+            </div>
+            <div class="field field-wide">
+              <label for="c-drop">Drop Location</label>
+              <input id="c-drop" type="text" placeholder="Munnar">
+            </div>
+            <div class="field">
+              <label for="c-date">Travel Date</label>
+              <input id="c-date" type="date">
+            </div>
+            <div class="field">
+              <label for="c-pax">Passengers</label>
+              <select id="c-pax"><option>1–4</option><option>5–7</option><option>8–12</option><option>13+</option></select>
+            </div>
+            <button type="button" class="btn btn-accent search-btn">Search Cabs</button>
+          </div>
+
+          <ul class="search-perks">
+            <li>&#10003; Free trip planning</li>
+            <li>&#10003; Handpicked properties</li>
+            <li>&#10003; Instant WhatsApp support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Explore Kerala</span>
+            <h2>Popular Destinations</h2>
+            <p>From misty hill stations to palm-fringed backwaters, find the Kerala that fits your journey.</p>
+          </div>
+          <a href="#" class="link-arrow">View all destinations</a>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1622308644420-b20142dc993c?auto=format&fit=crop&w=900&q=70" alt="Misty green hills of Munnar" loading="lazy">
+            <div class="dest-body">
+              <span class="dest-tag">Hill Station</span>
+              <h3>Munnar</h3>
+              <p>Rolling tea estates, cool mountain air and sweeping views of the Western Ghats.</p>
+              <a href="#" class="dest-link">Explore Munnar</a>
+            </div>
+          </article>
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=70" alt="Houseboat on a palm-lined canal in Alleppey" loading="lazy">
+            <div class="dest-body">
+              <span class="dest-tag">Backwaters</span>
+              <h3>Alleppey</h3>
+              <p>Glide through palm-lined canals aboard a traditional kettuvallam houseboat.</p>
+              <a href="#" class="dest-link">Explore Alleppey</a>
+            </div>
+          </article>
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=70" alt="Sunlit valley and mountains, evoking Wayanad" loading="lazy">
+            <div class="dest-body">
+              <span class="dest-tag">Nature</span>
+              <h3>Wayanad</h3>
+              <p>Waterfalls, ancient caves and lush forest trails in Kerala's green highlands.</p>
+              <a href="#" class="dest-link">Explore Wayanad</a>
+            </div>
+          </article>
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=900&q=70" alt="Elephants at sunset, evoking Thekkady wildlife" loading="lazy">
+            <div class="dest-body">
+              <span class="dest-tag">Wildlife</span>
+              <h3>Thekkady</h3>
+              <p>Spot elephants at Periyar, stroll spice gardens and cruise the lake at dawn.</p>
+              <a href="#" class="dest-link">Explore Thekkady</a>
+            </div>
+          </article>
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1597735881932-d9664c9bbcea?auto=format&fit=crop&w=900&q=70" alt="Kathakali performer in traditional costume, Kochi" loading="lazy">
+            <div class="dest-body">
+              <span class="dest-tag">Heritage</span>
+              <h3>Kochi</h3>
+              <p>Chinese fishing nets, colonial lanes, art cafés and evening Kathakali shows.</p>
+              <a href="#" class="dest-link">Explore Kochi</a>
+            </div>
+          </article>
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1625505826533-5c80aca7d157?auto=format&fit=crop&w=900&q=70" alt="Palm tree silhouetted against a sunset over the sea at Varkala" loading="lazy">
+            <div class="dest-body">
+              <span class="dest-tag">Beach</span>
+              <h3>Varkala</h3>
+              <p>Dramatic red cliffs above the Arabian Sea, with sunsets you won't forget.</p>
+              <a href="#" class="dest-link">Explore Varkala</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOTELS ============ -->
+    <section class="section section-alt" id="hotels">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Stay</span>
+            <h2>Popular Hotels &amp; Resorts</h2>
+            <p>Handpicked stays across Kerala. Ratings and prices shown are illustrative.</p>
+          </div>
+          <a href="#" class="link-arrow">Browse all stays</a>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="hotel-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=70" alt="Resort pool surrounded by palms" loading="lazy">
+              <span class="badge">Resort</span>
+            </div>
+            <div class="hotel-body">
+              <div class="hotel-top">
+                <h3>Lagoon Palms Resort</h3>
+                <span class="rating" aria-label="Rating 9.1 out of 10">9.1</span>
+              </div>
+              <p class="loc">Kumarakom, Kottayam</p>
+              <p class="desc">Lakeside villas with private decks, Ayurvedic spa and sunset backwater cruises.</p>
+              <div class="hotel-foot">
+                <p class="price"><span>from</span> ₹8,499 <small>/ night</small></p>
+                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="hotel-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=70" alt="Hotel with an outdoor swimming pool at dusk" loading="lazy">
+              <span class="badge">Hotel</span>
+            </div>
+            <div class="hotel-body">
+              <div class="hotel-top">
+                <h3>Mistvale Hill Retreat</h3>
+                <span class="rating" aria-label="Rating 8.8 out of 10">8.8</span>
+              </div>
+              <p class="loc">Chinnakanal, Munnar</p>
+              <p class="desc">Valley-view rooms, heated pool and guided walks through nearby tea estates.</p>
+              <div class="hotel-foot">
+                <p class="price"><span>from</span> ₹6,250 <small>/ night</small></p>
+                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="hotel-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&q=70" alt="Resort pool and loungers at twilight" loading="lazy">
+              <span class="badge">Beach Resort</span>
+            </div>
+            <div class="hotel-body">
+              <div class="hotel-top">
+                <h3>Cliffside Sands</h3>
+                <span class="rating" aria-label="Rating 9.0 out of 10">9.0</span>
+              </div>
+              <p class="loc">North Cliff, Varkala</p>
+              <p class="desc">Sea-facing suites steps from the cliff walk, with yoga at sunrise.</p>
+              <div class="hotel-foot">
+                <p class="price"><span>from</span> ₹5,799 <small>/ night</small></p>
+                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="hotel-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=70" alt="Elegant hotel facade lit at night" loading="lazy">
+              <span class="badge">Heritage Hotel</span>
+            </div>
+            <div class="hotel-body">
+              <div class="hotel-top">
+                <h3>Spice Coast Heritage</h3>
+                <span class="rating" aria-label="Rating 8.7 out of 10">8.7</span>
+              </div>
+              <p class="loc">Fort Kochi, Ernakulam</p>
+              <p class="desc">Restored colonial mansion near the fishing nets, with a courtyard café.</p>
+              <div class="hotel-foot">
+                <p class="price"><span>from</span> ₹4,900 <small>/ night</small></p>
+                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="hotel-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=70" alt="Resort pool and cabanas amid greenery" loading="lazy">
+              <span class="badge">Jungle Resort</span>
+            </div>
+            <div class="hotel-body">
+              <div class="hotel-top">
+                <h3>Greenwood Canopy</h3>
+                <span class="rating" aria-label="Rating 8.9 out of 10">8.9</span>
+              </div>
+              <p class="loc">Vythiri, Wayanad</p>
+              <p class="desc">Treehouse-style cottages wrapped in rainforest, with plantation trails.</p>
+              <div class="hotel-foot">
+                <p class="price"><span>from</span> ₹7,150 <small>/ night</small></p>
+                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="hotel-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=70" alt="Hotel exterior with pool and lounge chairs" loading="lazy">
+              <span class="badge">Homestay</span>
+            </div>
+            <div class="hotel-body">
+              <div class="hotel-top">
+                <h3>Cardamom Hills Stay</h3>
+                <span class="rating" aria-label="Rating 9.2 out of 10">9.2</span>
+              </div>
+              <p class="loc">Kumily, Thekkady</p>
+              <p class="desc">Family-run homestay with home-cooked Kerala meals and spice farm tours.</p>
+              <div class="hotel-foot">
+                <p class="price"><span>from</span> ₹3,200 <small>/ night</small></p>
+                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PACKAGES ============ -->
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Holiday Packages</span>
+            <h2>Curated Kerala Holidays</h2>
+            <p>Thoughtfully planned itineraries you can tailor to your dates and budget.</p>
+          </div>
+          <a href="#plan" class="link-arrow">Customise a package</a>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="pkg-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&w=800&q=70" alt="Houseboat moored among coconut palms" loading="lazy">
+              <span class="duration">4N / 5D</span>
+            </div>
+            <div class="pkg-body">
+              <h3>Munnar &amp; Alleppey Escape</h3>
+              <p>Tea-country mornings followed by a night aboard a private houseboat.</p>
+              <p class="price"><span>Starting at</span> ₹18,999 <small>/ person</small></p>
+              <a href="#" class="btn btn-outline btn-block">Explore Package</a>
+            </div>
+          </article>
+          <article class="pkg-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=70" alt="Lake and mountains at golden hour" loading="lazy">
+              <span class="duration">6N / 7D</span>
+            </div>
+            <div class="pkg-body">
+              <h3>Kerala Family Holiday</h3>
+              <p>Kochi, Munnar, Thekkady and the backwaters, paced for all ages.</p>
+              <p class="price"><span>Starting at</span> ₹27,499 <small>/ person</small></p>
+              <a href="#" class="btn btn-outline btn-block">Explore Package</a>
+            </div>
+          </article>
+          <article class="pkg-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1625505826533-5c80aca7d157?auto=format&fit=crop&w=800&q=70" alt="Palm tree against a golden sunset over the sea" loading="lazy">
+              <span class="duration">5N / 6D</span>
+            </div>
+            <div class="pkg-body">
+              <h3>Romantic Kerala Honeymoon</h3>
+              <p>Candlelit houseboat dinner, hill-view suites and Varkala sunsets.</p>
+              <p class="price"><span>Starting at</span> ₹32,999 <small>/ couple</small></p>
+              <a href="#" class="btn btn-outline btn-block">Explore Package</a>
+            </div>
+          </article>
+          <article class="pkg-card">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1622308644420-b20142dc993c?auto=format&fit=crop&w=800&q=70" alt="Clouds drifting over forested hills" loading="lazy">
+              <span class="duration">3N / 4D</span>
+            </div>
+            <div class="pkg-body">
+              <h3>Wayanad Nature Retreat</h3>
+              <p>Forest stays, Edakkal caves, waterfalls and plantation walks.</p>
+              <p class="price"><span>Starting at</span> ₹14,499 <small>/ person</small></p>
+              <a href="#" class="btn btn-outline btn-block">Explore Package</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CABS ============ -->
+    <section class="section section-dark" id="cabs">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow eyebrow-light">Cab &amp; Taxi Services</span>
+            <h2>Travel Kerala in Comfort</h2>
+            <p>Airport transfers, sightseeing and multi-day tours with experienced local drivers. Fares shown are illustrative.</p>
+          </div>
+          <a href="#plan" class="btn btn-accent">Book a Cab</a>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="cab-card">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=70" alt="Sedan car on an open road" loading="lazy">
+            <div class="cab-body">
+              <h3>Sedan</h3>
+              <p class="cab-sub">Dzire, Etios or similar</p>
+              <ul class="cab-specs">
+                <li>4 passengers</li><li>2 bags</li><li>AC</li>
+              </ul>
+              <div class="cab-foot">
+                <p class="price"><span>from</span> ₹12 <small>/ km</small></p>
+                <a href="#plan" class="btn btn-accent btn-sm">Book a Cab</a>
+              </div>
+            </div>
+          </article>
+          <article class="cab-card">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=70" alt="SUV parked outdoors" loading="lazy">
+            <div class="cab-body">
+              <h3>SUV</h3>
+              <p class="cab-sub">Innova Crysta, Ertiga or similar</p>
+              <ul class="cab-specs">
+                <li>6–7 passengers</li><li>4 bags</li><li>AC</li>
+              </ul>
+              <div class="cab-foot">
+                <p class="price"><span>from</span> ₹17 <small>/ km</small></p>
+                <a href="#plan" class="btn btn-accent btn-sm">Book a Cab</a>
+              </div>
+            </div>
+          </article>
+          <article class="cab-card">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=70" alt="Passenger van for group travel" loading="lazy">
+            <div class="cab-body">
+              <h3>Tempo Traveller</h3>
+              <p class="cab-sub">Force Traveller or similar</p>
+              <ul class="cab-specs">
+                <li>12–17 passengers</li><li>Large boot</li><li>AC</li>
+              </ul>
+              <div class="cab-foot">
+                <p class="price"><span>from</span> ₹24 <small>/ km</small></p>
+                <a href="#plan" class="btn btn-accent btn-sm">Book a Cab</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <div>
+            <span class="eyebrow">Why MyTrip 2 Keralam</span>
+            <h2>Travel With People Who Know Kerala</h2>
+          </div>
+        </div>
+
+        <div class="grid grid-3 why-grid">
+          <div class="why-item">
+            <span class="why-ico" aria-hidden="true">&#9873;</span>
+            <h3>Local Kerala Travel Experts</h3>
+            <p>Our team lives here, so you get honest advice on the best seasons, routes and hidden gems.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-ico" aria-hidden="true">&#9733;</span>
+            <h3>Carefully Selected Hotels</h3>
+            <p>Every stay is personally vetted for comfort, cleanliness, location and service.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-ico" aria-hidden="true">&#10070;</span>
+            <h3>Customized Travel Experiences</h3>
+            <p>Itineraries built around your pace, interests and budget, never one-size-fits-all.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-ico" aria-hidden="true">&#10148;</span>
+            <h3>Reliable Transportation</h3>
+            <p>Clean, well-maintained vehicles and courteous drivers who know every ghat road.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-ico" aria-hidden="true">&#9742;</span>
+            <h3>Personalized Assistance</h3>
+            <p>A dedicated travel advisor on call before, during and after your trip.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-ico" aria-hidden="true">&#10003;</span>
+            <h3>Easy Enquiry Process</h3>
+            <p>Share your plans by call, WhatsApp or form and get a tailored quote quickly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-section" id="plan">
+      <div class="container">
+        <div class="cta-banner">
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=70" alt="" aria-hidden="true" loading="lazy">
+          <div class="cta-content">
+            <h2>Your Kerala Journey Starts Here</h2>
+            <p>Let us help you plan a memorable Kerala experience.</p>
+            <div class="hero-ctas">
+              <a href="#" class="btn btn-accent btn-lg">Plan Your Trip</a>
+              <a href="https://wa.me/910000000000?text=Hi%2C%20I%27d%20like%20to%20plan%20a%20Kerala%20trip" class="btn btn-outline-light btn-lg">Chat on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand brand-light">
+          <span class="brand-mark" aria-hidden="true">M2K</span>
+          <span class="brand-text">MyTrip <em>2</em> Keralam</span>
+        </a>
+        <p>Your local partner for Kerala hotels, holiday packages, cabs and custom journeys across God's Own Country.</p>
+        <ul class="socials" aria-label="Social media">
+          <li><a href="#" aria-label="Facebook">f</a></li>
+          <li><a href="#" aria-label="Instagram">ig</a></li>
+          <li><a href="#" aria-label="YouTube">yt</a></li>
+          <li><a href="#" aria-label="X">x</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#hotels">Hotels &amp; Resorts</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#cabs">Cabs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#destinations">Munnar</a></li>
+          <li><a href="#destinations">Alleppey</a></li>
+          <li><a href="#destinations">Wayanad</a></li>
+          <li><a href="#destinations">Thekkady</a></li>
+          <li><a href="#destinations">Kochi</a></li>
+          <li><a href="#destinations">Varkala</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#hotels">Hotel &amp; Resort Booking</a></li>
+          <li><a href="#packages">Kerala Tour Packages</a></li>
+          <li><a href="#cabs">Cab &amp; Taxi Hire</a></li>
+          <li><a href="#plan">Customized Holidays</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li>Kochi, Kerala, India</li>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><a href="mailto:hello@mytrip2keralam.com">hello@mytrip2keralam.com</a></li>
+          <li>Mon–Sun, 8 AM – 10 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 MyTrip 2 Keralam. All rights reserved.</p>
+      <p>Prices and ratings shown are illustrative.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp + call -->
+  <div class="float-actions">
+    <a href="tel:+910000000000" class="float-btn float-call" aria-label="Call us">&#9742;</a>
+    <a href="https://wa.me/910000000000?text=Hi%2C%20I%27m%20interested%20in%20a%20Kerala%20trip" class="float-btn float-wa" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.5-.3z"/></svg>
+    </a>
+  </div>
+
+</body>
+</html>
